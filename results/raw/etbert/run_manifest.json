@@ -1,0 +1,85 @@
+{
+  "experiment": "Official ET-BERT final-paper baseline rerun",
+  "created_at": "2026-09-27 15:33:29",
+  "script": "/home/admin1/lkfiles/ET-BERT_final_paper_experiments.py",
+  "script_sha256": "701312c8e8804a9a21e832558f9950ed82efe900bdf51537e657c356fff4d559",
+  "official_etbert": {
+    "root": "/home/admin1/lkfiles/ET-BERT",
+    "git": {
+      "head": "d59470624acd11405f9e88da650cf3bf65521e9a",
+      "remote": "https://github.com/linwhitehat/ET-BERT.git"
+    },
+    "official_train_script": "/home/admin1/lkfiles/ET-BERT/fine-tuning/run_classifier.py",
+    "official_train_sha256": "b41d1344839a46d377b7a2216d492766e090ac26c6193eca6e6b82de87a0fb25",
+    "patched_private_train_script": "/home/admin1/lkfiles/RESULT/ETBERT_FINAL_PAPER_BASELINE_V1/_patched_official_run_classifier.py",
+    "patched_train_sha256": "b41d1344839a46d377b7a2216d492766e090ac26c6193eca6e6b82de87a0fb25",
+    "inference_script": "/home/admin1/lkfiles/ET-BERT/inference/run_classifier_infer.py",
+    "inference_sha256": "209a465fb9aa97b13c20c33d6436209cc0459dcba9eca0388a514f748550712c",
+    "preprocess_script": "/home/admin1/lkfiles/ET-BERT/data_process/dataset_generation.py",
+    "preprocess_sha256": "6d0d0300d32c94d696ccf7cc453854d95623db5455f9a487ab1553d5942ae561",
+    "pretrained": "/home/admin1/lkfiles/ET-BERT/models/pre-trained_model.bin",
+    "pretrained_sha256": "10fa968465cc952098e6218658b580cfe53f59db49b63d6f2fa0652365ea4f0b",
+    "vocab": "/home/admin1/lkfiles/ET-BERT/models/encryptd_vocab.txt",
+    "vocab_sha256": "c9959ad9dc50e5e73b82e788d2ee4559e1cb0d1b4d7afd0fa452c71a8889dab9",
+    "config": "/home/admin1/lkfiles/ET-BERT/models/bert/base_config.json",
+    "config_sha256": "13d03fdeaa9df2b621abcf5897c2fec60f5d710070421eaace4ebdd16011a54b"
+  },
+  "datasets": {
+    "CipherSpectrum": {
+      "root": "/home/admin1/dataset/aes-128-gcm/aes-128-gcm",
+      "split_manifest": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/split_manifest.json",
+      "split_sha256": "01e3b572e8514a238b3733e224161acd1112b79b56f038635be9339b23cfad6b",
+      "dataset_manifest_sha256": "821bee04771f0c8dce3680a4301164d8ab48e03ec0d1ed57c3930015ad200a61",
+      "num_classes": 41,
+      "split_counts": {
+        "train": 29520,
+        "validation": 3280,
+        "test": 8200
+      }
+    },
+    "USTC-TFC2016": {
+      "root": "/home/admin1/dataset/USTC-TFC2016-Split",
+      "split_manifest": "/home/admin1/lkfiles/RESULT/SMGF_V17_USTC_SEED42_FULL_F10000_20260924_082814/split_manifest.json",
+      "split_sha256": "a34754daa9e202f154484a5b63a8840eb829e56aeaaff4549bac6cb711127f3b",
+      "dataset_manifest_sha256": "612c69a851dad04658619fd6c79ef60f34d08dd7dd1a0e14262fa01428cb2190",
+      "num_classes": 12,
+      "split_counts": {
+        "train": 15304,
+        "validation": 1700,
+        "test": 4252
+      }
+    }
+  },
+  "training": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "epochs": 10,
+    "batch_size": 32,
+    "learning_rate": 2e-05,
+    "seq_length": 128,
+    "checkpoint_rule": "official ET-BERT best validation accuracy"
+  },
+  "evaluation": {
+    "ece_bins": 15,
+    "mixed_strengths": [
+      1.0
+    ],
+    "adaptive_strengths": [
+      1.0
+    ],
+    "primary_mixed_strength": 1.0,
+    "primary_adaptive_strength": 1.0,
+    "attack_base_seed": 20260923,
+    "asr_definition": "fraction of clean-correct samples misclassified after attack",
+    "rel_drop_definition": "(CleanAcc-RobAcc)/CleanAcc*100",
+    "auroc": "macro one-vs-rest"
+  },
+  "attack_translation": {
+    "scientific_constraint": "SMGF attacks are defined in feature space while ET-BERT uses raw bytes; exact internal-tensor cache reuse is impossible.",
+    "mixed": "packet-length padding + IAT jitter + dummy insertion; deterministic random filler for newly added bytes",
+    "adaptive": "same structural perturbation family; payload bytes of genuine packets are preserved; added bytes are zero filler"
+  }
+}

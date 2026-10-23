@@ -1,0 +1,36 @@
+{
+  "dataset": "CipherSpectrum",
+  "protocol_frozen": true,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "seed42_reused": "/home/admin1/lkfiles/RESULT/SMGF_V17_ROBUST_RATIO_TUNING_SEED42_20260923_090329/RATIO_020/checkpoints/best.pt",
+  "new_train_seeds": [
+    43,
+    44
+  ],
+  "epochs": 100,
+  "lr_schedule": [
+    [
+      1,
+      70,
+      0.002
+    ],
+    [
+      71,
+      100,
+      0.0005
+    ]
+  ],
+  "weight_decay": 0.0001,
+  "robust_batch_ratio": 0.2,
+  "robust_strength_range": [
+    0.3,
+    0.9
+  ],
+  "attack_ce_weight": 1.0,
+  "kl_weight": 0.0,
+  "dataset_manifest": "821bee04771f0c8dce3680a4301164d8ab48e03ec0d1ed57c3930015ad200a61"
+}

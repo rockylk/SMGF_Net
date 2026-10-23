@@ -1,0 +1,44 @@
+{
+  "dataset": "CipherSpectrum",
+  "split_sha256": "01e3b572e8514a238b3733e224161acd1112b79b56f038635be9339b23cfad6b",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "count": 45,
+  "sources": {
+    "PEAN-NHP": {
+      "path": "/home/admin1/lkfiles/RESULT/FIG6_CIPHER_FROZEN_GPU_SWEEP/pean/PEAN_NHP_Figure6_observed.csv",
+      "sha256": "b47c3063dd9b6eacbfad4326f3bce0b544a29b6ba1a32ee333551cab21d83433"
+    },
+    "IBGC": {
+      "path": "/home/admin1/lkfiles/RESULT/FIG6_CIPHER_FROZEN_GPU_SWEEP/ibgc/IBGC_Figure6_observed.csv",
+      "sha256": "a5ed0802335d13ca1d7a9c54acff4bea2c6d7143f83c274467d30e4ec9e6f1a7"
+    },
+    "ET-BERT": {
+      "path": "/home/admin1/lkfiles/RESULT/FIG6_CIPHER_FROZEN_GPU_SWEEP/etbert/ETBERT_Figure6_observed.csv",
+      "sha256": "5dd623dd51ba46415f61b8496c61b10cba767456638c9f03cb4e0debb18e0fc0"
+    }
+  },
+  "supplement_sha256": "ac0cdd175f940debf35e912033383e45c330dd5fa3e097adff09e98d39b0fbb2",
+  "checkpoint_sha256_by_model_seed": {
+    "PEAN-NHP": {
+      "42": "4a14a13e8fe821d1ba9ef7305422f1caa2b85ec0519163ec774dee191fdfd65e",
+      "43": "f25c5026e4e38e71ca4ce961ede282f44b866e535a47b7fd45a01ef6b92c470a",
+      "44": "febde7ea0a426ea1648e62c59ceeff8d9a90db98da8ff3296b59e6594c471c51"
+    },
+    "IBGC": {
+      "42": "9bbaf14703e83a8a65f585b73eaac64ea8dc64cc3ef433f3f6724b54af436ca4",
+      "43": "3edfcad146b3be11b39f92f52dcf1972539336dc31b7e26cfbbf1c33e4ebe352",
+      "44": "3d6fad2476ba1af800ddbdf178f9384af22de9d0d990c618ddc43eee9f43b095"
+    },
+    "ET-BERT": {
+      "42": "495b2d73e71c9a31e89daf9abf6345019547d8956810b192e16a8258f9ecfc39",
+      "43": "66f1e0573f8336c657da3afa6b00f47538f8c14b72298100a5edc6e7f3c9e1ea",
+      "44": "44fcd24b85644f7d2ca7ec03119ee6d098811294a44035ab85eac383476a711d"
+    }
+  },
+  "missing_artifacts_allowed": false,
+  "note": "Official attack protocol/checkpoint consistency must also be confirmed by each baseline's own evaluator and frozen endpoint checks."
+}

@@ -1,0 +1,37 @@
+{
+  "baseline": "IBGC_V17_V1_100EP",
+  "code": {
+    "IBGC_final_paper_experiments_V1_100ep.py": "8afa1e8afb38cea3dc40bdc49d4b13f4ccebb77f8fb8c5f484b112ee359571e7",
+    "baseline_v17_common.py": "5cac4313cc4991b3de5fd4e1025b940c01249148b67fb2c3d9cb8218650a99cf",
+    "fetch_official.py": "baeae2075e97f511fa546b893d978a066c87efdb8041aed6844d527d960a5536",
+    "ibgc_data.py": "282830561a61ef7c0518353aa436abed420d997562e06bca3515a4a1ae9d130f",
+    "ibgc_engine.py": "a3722a17998d02f8b0004e1a8c00a4ff29420441c310e00bc906fe46dcd7811b",
+    "ibgc_graph.py": "794ed2f8b4d01812f39f689670ee76b0c7586a924187aaa5c446faea5ce657b7",
+    "ibgc_io.py": "29002be7edbaf19aaaa7c4d56008943bc08f6d9e2007ddceedaea21275749bdf",
+    "ibgc_model.py": "cdb0da54a6c8ce8729d7745529907a25a46893e900b2592dd9e67fcda9815275",
+    "test_ibgc.py": "0e1937470a101e204209eb36a36433548b8d2e211d234f9f653cb74b9d909b35"
+  },
+  "epochs": 100,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "batch_size": 64,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "scheduler": null,
+  "selection": "minimum clean validation CE; earliest tie",
+  "attack_base_seed": 20260919,
+  "train_conditions": [
+    "clean"
+  ],
+  "evaluation_conditions": [
+    "clean",
+    "mixed@1",
+    "adaptive@1"
+  ],
+  "normalization": "none (upstream graph features)",
+  "early_stopping": false
+}

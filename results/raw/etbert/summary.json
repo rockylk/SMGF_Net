@@ -1,0 +1,169 @@
+{
+  "experiment": "Official ET-BERT final-paper baseline rerun",
+  "datasets": [
+    "CipherSpectrum",
+    "USTC-TFC2016"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "official_etbert": {
+    "root": "/home/admin1/lkfiles/ET-BERT",
+    "git": {
+      "head": "d59470624acd11405f9e88da650cf3bf65521e9a",
+      "remote": "https://github.com/linwhitehat/ET-BERT.git"
+    },
+    "pretrained": "/home/admin1/lkfiles/ET-BERT/models/pre-trained_model.bin",
+    "pretrained_sha256": "10fa968465cc952098e6218658b580cfe53f59db49b63d6f2fa0652365ea4f0b",
+    "vocab_sha256": "c9959ad9dc50e5e73b82e788d2ee4559e1cb0d1b4d7afd0fa452c71a8889dab9",
+    "config_sha256": "13d03fdeaa9df2b621abcf5897c2fec60f5d710070421eaace4ebdd16011a54b"
+  },
+  "protocol": {
+    "epochs": 10,
+    "batch_size": 32,
+    "learning_rate": 2e-05,
+    "seq_length": 128,
+    "checkpoint_rule": "official ET-BERT best validation accuracy",
+    "ece_bins": 15,
+    "primary_mixed_strength": 1.0,
+    "primary_adaptive_strength": 1.0,
+    "attack_translation": "raw-packet structural translation; see run_manifest.json"
+  },
+  "aggregate_mean_sample_sd": {
+    "CipherSpectrum": {
+      "clean_acc": {
+        "mean": 33.577235772357724,
+        "sample_sd": 1.431269583087872
+      },
+      "clean_f1": {
+        "mean": 26.589012870650077,
+        "sample_sd": 1.0506304501843886
+      },
+      "clean_ece": {
+        "mean": 3.4627196255283867,
+        "sample_sd": 0.7243287174891844
+      },
+      "clean_auroc": {
+        "mean": 80.75608384146342,
+        "sample_sd": 0.3524221486268758
+      },
+      "mixed_robust_acc": {
+        "mean": 22.943089430894307,
+        "sample_sd": 3.946706496227037
+      },
+      "mixed_robust_f1": {
+        "mean": 18.944747258713743,
+        "sample_sd": 2.8665143328103704
+      },
+      "mixed_asr": {
+        "mean": 35.43741664621778,
+        "sample_sd": 9.648222625499677
+      },
+      "mixed_rel_drop": {
+        "mean": 31.890155395180848,
+        "sample_sd": 9.464417855471794
+      },
+      "mixed_ece": {
+        "mean": 4.130146927631847,
+        "sample_sd": 1.1482906992380866
+      },
+      "mixed_auroc": {
+        "mean": 73.05580106707318,
+        "sample_sd": 3.3790367339343725
+      },
+      "adaptive_robust_acc": {
+        "mean": 25.195121951219512,
+        "sample_sd": 3.669556573911543
+      },
+      "adaptive_robust_f1": {
+        "mean": 20.68276621285366,
+        "sample_sd": 2.524052647683797
+      },
+      "adaptive_asr": {
+        "mean": 28.291499295047686,
+        "sample_sd": 8.938283515686722
+      },
+      "adaptive_rel_drop": {
+        "mean": 25.153036656926183,
+        "sample_sd": 8.396513588661481
+      },
+      "adaptive_ece": {
+        "mean": 4.286613702334888,
+        "sample_sd": 1.0290986469452044
+      },
+      "adaptive_auroc": {
+        "mean": 74.70003074186992,
+        "sample_sd": 2.5736230476715174
+      }
+    },
+    "USTC-TFC2016": {
+      "clean_acc": {
+        "mean": 86.3436814048291,
+        "sample_sd": 0.6882213939695411
+      },
+      "clean_f1": {
+        "mean": 87.01060142647707,
+        "sample_sd": 0.566914675524219
+      },
+      "clean_ece": {
+        "mean": 1.526287029149502,
+        "sample_sd": 0.39504035518346614
+      },
+      "clean_auroc": {
+        "mean": 99.01950581154422,
+        "sample_sd": 0.0387785098272634
+      },
+      "mixed_robust_acc": {
+        "mean": 75.1019128253371,
+        "sample_sd": 2.3156116103917057
+      },
+      "mixed_robust_f1": {
+        "mean": 76.74382793256193,
+        "sample_sd": 1.92312130909085
+      },
+      "mixed_asr": {
+        "mean": 14.116952206068493,
+        "sample_sd": 3.7382268639729372
+      },
+      "mixed_rel_drop": {
+        "mean": 13.001879025670902,
+        "sample_sd": 3.3840089672231346
+      },
+      "mixed_ece": {
+        "mean": 10.808759370649934,
+        "sample_sd": 3.5588679133913113
+      },
+      "mixed_auroc": {
+        "mean": 97.45379323573391,
+        "sample_sd": 0.6012722595642425
+      },
+      "adaptive_robust_acc": {
+        "mean": 63.875823142050805,
+        "sample_sd": 3.7791425421003098
+      },
+      "adaptive_robust_f1": {
+        "mean": 67.6165951358787,
+        "sample_sd": 2.5286348173070903
+      },
+      "adaptive_asr": {
+        "mean": 27.02476170426074,
+        "sample_sd": 4.3345381492874475
+      },
+      "adaptive_rel_drop": {
+        "mean": 25.995350648766674,
+        "sample_sd": 4.966664560030329
+      },
+      "adaptive_ece": {
+        "mean": 22.859931688588702,
+        "sample_sd": 6.646488151651737
+      },
+      "adaptive_auroc": {
+        "mean": 95.68704975229213,
+        "sample_sd": 1.1690070737576965
+      }
+    }
+  },
+  "script_sha256": "701312c8e8804a9a21e832558f9950ed82efe900bdf51537e657c356fff4d559"
+}

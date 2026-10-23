@@ -1,0 +1,43 @@
+{
+  "definition": "All effects are percentage-point differences at fixed training seed42. Positive means the named component increases the corresponding metric.",
+  "gate_effect_under_robust_training": {
+    "clean_acc": -0.024390243902445263,
+    "clean_f1": 0.049862165810992565,
+    "mixed_robust_acc": 2.439024390243901,
+    "mixed_robust_f1": 2.694006209879362,
+    "adaptive_robust_acc": 3.6951219512195195,
+    "adaptive_robust_f1": 3.7612956108827262
+  },
+  "gate_effect_without_robust_training": {
+    "clean_acc": 1.707317073170728,
+    "clean_f1": 1.670298085661841,
+    "mixed_robust_acc": 4.048780487804876,
+    "mixed_robust_f1": 4.437043245068828,
+    "adaptive_robust_acc": 9.292682926829258,
+    "adaptive_robust_f1": 9.271565071177648
+  },
+  "robust_training_effect_with_gate": {
+    "clean_acc": -1.2195121951219505,
+    "clean_f1": -1.2275116916755309,
+    "mixed_robust_acc": 38.1829268292683,
+    "mixed_robust_f1": 38.540550570602065,
+    "adaptive_robust_acc": 3.6951219512195195,
+    "adaptive_robust_f1": 3.882426198261541
+  },
+  "robust_training_effect_without_gate": {
+    "clean_acc": 0.5121951219512226,
+    "clean_f1": 0.3929242281753176,
+    "mixed_robust_acc": 39.79268292682927,
+    "mixed_robust_f1": 40.28358760579153,
+    "adaptive_robust_acc": 9.292682926829258,
+    "adaptive_robust_f1": 9.392695658556462
+  },
+  "gate_x_robust_interaction": {
+    "clean_acc": -1.7317073170731732,
+    "clean_f1": -1.6204359198508484,
+    "mixed_robust_acc": -1.6097560975609753,
+    "mixed_robust_f1": -1.7430370351894666,
+    "adaptive_robust_acc": -5.597560975609738,
+    "adaptive_robust_f1": -5.510269460294921
+  }
+}

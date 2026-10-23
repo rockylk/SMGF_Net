@@ -1,0 +1,41 @@
+{
+  "dataset": "USTC-TFC2016",
+  "run_kind": "FULL",
+  "pilot_fraction": 1.0,
+  "paper_valid": true,
+  "warning": "Full-dataset seed result under the frozen protocol.",
+  "train_seed": 43,
+  "best_epoch": 13,
+  "best_val_loss": 0.1741956302355838,
+  "initial_state_sha256": "60a207d3ac6fb219313010b42420c030df51c42c9ee74b3c0da7c685e920e0b0",
+  "checkpoint": "/home/admin1/lkfiles/RESULT/SMGF_V17_USTC_SEED43_FULL_F10000_20260924_144614/checkpoints/USTC_FINAL_seed43.pt",
+  "clean": {
+    "acc": 93.13264346190027,
+    "macro_f1": 93.25625724156784,
+    "ece": 1.3343449370096208
+  },
+  "attacks": {
+    "mixed@1.0": {
+      "robust_acc": 83.96048918156161,
+      "robust_f1": 84.41970898854488,
+      "asr": 10.85858585858586,
+      "rel_drop": 9.848484848484846,
+      "ece": 3.2160584528353118
+    },
+    "adaptive@1.0": {
+      "robust_acc": 87.30009407337724,
+      "robust_f1": 87.85360624275883,
+      "asr": 6.8181818181818175,
+      "rel_drop": 6.262626262626249,
+      "ece": 2.2894824079657585
+    }
+  },
+  "historical_manuscript_reference_context_only": {
+    "clean_acc": 93.46,
+    "clean_f1": 93.66,
+    "mixed1_acc": 55.71,
+    "mixed1_f1": 56.08,
+    "adaptive1_acc": 73.89,
+    "adaptive1_f1": 74.35
+  }
+}

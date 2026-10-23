@@ -1,0 +1,338 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "epochs": 100,
+  "datasets": [
+    "CipherSpectrum",
+    "USTC-TFC2016"
+  ],
+  "aggregate": [
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "clean",
+      "metric": "acc",
+      "mean": 82.16666666666666,
+      "sample_sd": 0.7958037378232516,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "clean",
+      "metric": "macro_f1",
+      "mean": 81.9799861030479,
+      "sample_sd": 0.9677603836409925,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "clean",
+      "metric": "ece",
+      "mean": 1.5442510262979727,
+      "sample_sd": 0.5140551391277904,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "clean",
+      "metric": "macro_auroc",
+      "mean": 99.4194674796748,
+      "sample_sd": 0.06926176871901675,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "mixed_1.0",
+      "metric": "robust_acc",
+      "mean": 17.621951219512194,
+      "sample_sd": 2.0278768095105932,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "mixed_1.0",
+      "metric": "robust_f1",
+      "mean": 16.311619323019407,
+      "sample_sd": 2.2522737113631015,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "mixed_1.0",
+      "metric": "asr",
+      "mean": 80.48733113008988,
+      "sample_sd": 2.3559630189434486,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "mixed_1.0",
+      "metric": "rel_drop",
+      "mean": 78.56741892343547,
+      "sample_sd": 2.272915177395313,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "mixed_1.0",
+      "metric": "abs_drop_pp",
+      "mean": 64.54471544715447,
+      "sample_sd": 1.2792870870607467,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "mixed_1.0",
+      "metric": "ece",
+      "mean": 62.07919355112362,
+      "sample_sd": 2.0748775759075944,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "mixed_1.0",
+      "metric": "macro_auroc",
+      "mean": 77.32213135162601,
+      "sample_sd": 2.2364253904255773,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "adaptive_1.0",
+      "metric": "robust_acc",
+      "mean": 17.3739837398374,
+      "sample_sd": 2.192896342381803,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "adaptive_1.0",
+      "metric": "robust_f1",
+      "mean": 16.16995187671868,
+      "sample_sd": 2.3611507887360936,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "adaptive_1.0",
+      "metric": "asr",
+      "mean": 80.65063222355049,
+      "sample_sd": 2.260432106855773,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "adaptive_1.0",
+      "metric": "rel_drop",
+      "mean": 78.8709057727063,
+      "sample_sd": 2.467491944919516,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "adaptive_1.0",
+      "metric": "abs_drop_pp",
+      "mean": 64.79268292682927,
+      "sample_sd": 1.4106862489724077,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "adaptive_1.0",
+      "metric": "ece",
+      "mean": 62.389387709217345,
+      "sample_sd": 1.874287256686585,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "CipherSpectrum",
+      "condition": "adaptive_1.0",
+      "metric": "macro_auroc",
+      "mean": 77.37667606707318,
+      "sample_sd": 2.060347467980327,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "clean",
+      "metric": "acc",
+      "mean": 92.04296017560364,
+      "sample_sd": 0.12952894043476146,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "clean",
+      "metric": "macro_f1",
+      "mean": 92.33282920988736,
+      "sample_sd": 0.11748734799961287,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "clean",
+      "metric": "ece",
+      "mean": 2.205095060143999,
+      "sample_sd": 0.5365831804143951,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "clean",
+      "metric": "macro_auroc",
+      "mean": 99.42524617205079,
+      "sample_sd": 0.06277905258256818,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "mixed_1.0",
+      "metric": "robust_acc",
+      "mean": 26.034807149576668,
+      "sample_sd": 1.1422751123782575,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "mixed_1.0",
+      "metric": "robust_f1",
+      "mean": 21.803870422505284,
+      "sample_sd": 1.209699702933055,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "mixed_1.0",
+      "metric": "asr",
+      "mean": 72.36156283130686,
+      "sample_sd": 1.3408361217759246,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "mixed_1.0",
+      "metric": "rel_drop",
+      "mean": 71.71429971830872,
+      "sample_sd": 1.2483861304517236,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "mixed_1.0",
+      "metric": "abs_drop_pp",
+      "mean": 66.00815302602697,
+      "sample_sd": 1.167972535093677,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "mixed_1.0",
+      "metric": "ece",
+      "mean": 63.37255074786575,
+      "sample_sd": 1.228912017818406,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "mixed_1.0",
+      "metric": "macro_auroc",
+      "mean": 74.92972111366645,
+      "sample_sd": 1.401724958690748,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "adaptive_1.0",
+      "metric": "robust_acc",
+      "mean": 26.622765757290686,
+      "sample_sd": 1.432303854993897,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "adaptive_1.0",
+      "metric": "robust_f1",
+      "mean": 21.986572085766525,
+      "sample_sd": 1.927661172745393,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "adaptive_1.0",
+      "metric": "asr",
+      "mean": 71.79059323416982,
+      "sample_sd": 1.6665621320915551,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "adaptive_1.0",
+      "metric": "rel_drop",
+      "mean": 71.0752398465862,
+      "sample_sd": 1.5700432735578782,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "adaptive_1.0",
+      "metric": "abs_drop_pp",
+      "mean": 65.42019441831296,
+      "sample_sd": 1.476482579742058,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "adaptive_1.0",
+      "metric": "ece",
+      "mean": 62.48730720946896,
+      "sample_sd": 1.7149314430879508,
+      "n_seeds": 3,
+      "status": "ok"
+    },
+    {
+      "dataset": "USTC-TFC2016",
+      "condition": "adaptive_1.0",
+      "metric": "macro_auroc",
+      "mean": 75.3691107693807,
+      "sample_sd": 1.6138747137808138,
+      "n_seeds": 3,
+      "status": "ok"
+    }
+  ]
+}

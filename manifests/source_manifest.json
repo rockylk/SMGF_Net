@@ -1,0 +1,919 @@
+{
+  "format_version": 1,
+  "archive_date": "2026-10-21",
+  "policy": "Selected final local non-cloud sources. Original bytes retained. Generated files are separate.",
+  "formal_archives": {
+    "smgfnet_cipher": "SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542",
+    "smgfnet_ustc": "SMGF_V17_USTC_FINAL_3SEED_20260924_144614",
+    "ustc_cnn": "USTC_CNN_FINAL_PAPER_BASELINE_V1",
+    "etbert": "ETBERT_FINAL_PAPER_BASELINE_V1",
+    "pean_nhp": "PEAN_NHP_FINAL_PAPER_BASELINE_V1_100EP",
+    "ibgc": "IBGC_V17_V1_100EP",
+    "ablation": "SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742"
+  },
+  "files": [
+    {
+      "path": "analysis/overhead/adapters.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/adapters.py",
+      "sha256": "dd6d4a017ef1640c31b9bb7ecccbad65ad6ad5b9ff438883d68a0e35588afc73",
+      "bytes": 14307,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/build_report.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/build_report.py",
+      "sha256": "4f089a9f36882aa6c8633b984f67f4b616c30586e5bdb96328369a38086528d3",
+      "bytes": 9636,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/diagnose_previous.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/diagnose_previous.py",
+      "sha256": "53c912882483fef96e3a67ff339d9e5e06090f08ac1576be29365cfccea04181",
+      "bytes": 5412,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/etbert_hook/sitecustomize.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/etbert_hook/sitecustomize.py",
+      "sha256": "03f51583f4ddc05cf7b5c1d5f4f1347ee393d0e1659eb6a5d44bd01ddbb8b3c5",
+      "bytes": 4923,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/export_graph_input.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/export_graph_input.py",
+      "sha256": "ab8be369d65c53328855ca57bd77997acb3fc6efb9b3a61e41c9d5055f009065",
+      "bytes": 6207,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/inventory.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/inventory.py",
+      "sha256": "ef582d589cdcbaf795fb9fddcabe14ba6b139c0beb393351bd697620235891a6",
+      "bytes": 8964,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/profile_one.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/profile_one.py",
+      "sha256": "e8b13d35b3e9c3fe19ee9b98d89f2ce9f89597bffa83408dd710d2aab563e993",
+      "bytes": 8722,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/rebuild_fig7_only.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/rebuild_fig7_only.py",
+      "sha256": "f9a89099e5119eeb74574b071cc15fc78a2423b53dd320d1eb3e9ffd802df440",
+      "bytes": 6222,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/run_server.sh",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/run_server.sh",
+      "sha256": "8d721a481bf848460c41784c9b4ac04be7f40cc894b3c8472d3940d954e9d203",
+      "bytes": 1986,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/server_layout_check.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/server_layout_check.py",
+      "sha256": "a66a3ce9f06a5121a621e6b75d0ea933f5760c1defacfdff7229535a0682fcfd",
+      "bytes": 1340,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/server_oneclick.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/server_oneclick.py",
+      "sha256": "441c5bcb38cab79ca7a7ed578f06891c19dddaf9317653b80d564a47c0f71faa",
+      "bytes": 21504,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/show_results.sh",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/show_results.sh",
+      "sha256": "9f9ef82b5d6e54c9d2b11b53989c6ba301f101c97e5071e70b6ad0e7a0c51a51",
+      "bytes": 1093,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/tests.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/tests.py",
+      "sha256": "2d5cfe600a626cbe661ec0493e0d6576b9e38c0aa015559d2505008326cf947c",
+      "bytes": 5407,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/tests_layout.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/tests_layout.py",
+      "sha256": "da176ba92e2c77520af19fa231a093a6159367961d3e737834bfc74eb42c78f9",
+      "bytes": 3032,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/tests_resume.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/tests_resume.py",
+      "sha256": "6ae97aa749b9dbabf1d1af8520f7fd7f161014c16af209d2a1f371e095ba869d",
+      "bytes": 3108,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/vendor/PEAN_NHP_V17_model.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/vendor/PEAN_NHP_V17_model.py",
+      "sha256": "110b1330ee766805a8545429484beec6e00a167817b440cf600f378b56b11b82",
+      "bytes": 3638,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/vendor/USTC_CNN_final_paper_experiments.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/vendor/USTC_CNN_final_paper_experiments.py",
+      "sha256": "964078e3070b04e4e96c3838bf24a6f79cdaf122a0063e29e05bc3e50b65f8f0",
+      "bytes": 53650,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/vendor/V16-SMGF-Net_final_paper_experiments.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/vendor/V16-SMGF-Net_final_paper_experiments.py",
+      "sha256": "3ecaf0054a1a190b444fe6f3c19cf6203273ad32707041ec53b09318ca20a4e2",
+      "bytes": 95933,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/vendor/V17-SMGF-Net_final_paper_experiments.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/vendor/V17-SMGF-Net_final_paper_experiments.py",
+      "sha256": "17c88de543207e0241c666a4aa7aae4d36c023dda37ac131d7531957ede2cfa9",
+      "bytes": 53937,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/vendor/baseline_v17_common.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/vendor/baseline_v17_common.py",
+      "sha256": "5cac4313cc4991b3de5fd4e1025b940c01249148b67fb2c3d9cb8218650a99cf",
+      "bytes": 25650,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/vendor/ibgc_graph.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/vendor/ibgc_graph.py",
+      "sha256": "794ed2f8b4d01812f39f689670ee76b0c7586a924187aaa5c446faea5ce657b7",
+      "bytes": 2987,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/vendor/ibgc_model.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/vendor/ibgc_model.py",
+      "sha256": "cdb0da54a6c8ce8729d7745529907a25a46893e900b2592dd9e67fcda9815275",
+      "bytes": 759,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/overhead/vendor/official_sources/PEAN/TRF.py",
+      "origin": "新一体化实验chiper/Section56_SERVER_ONECLICK_20261009/vendor/official_sources/PEAN/TRF.py",
+      "sha256": "927c864c0bfcf7033b04c0689f5d8df6c7a08693593b3a12ec5e17d9fa286e98",
+      "bytes": 5273,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/roc/analysis_report.json",
+      "origin": "Fig5_macro_OvR/analysis_report.json",
+      "sha256": "5d02fdcdbe1f450c75c0284afe2c70b898d1c26671e67a38bdfd1e4afbb39083",
+      "bytes": 534,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "analysis/roc/audit_panel_alignment.py",
+      "origin": "Fig5_macro_OvR/audit_panel_alignment.py",
+      "sha256": "0ac6e3aa71b4f27c35880bf96f535191566b0884fd6857e105149b43704777b9",
+      "bytes": 40297,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/roc/auroc_mean_sample_sd.csv",
+      "origin": "Fig5_macro_OvR/auroc_mean_sample_sd.csv",
+      "sha256": "f9d726375069f373d20c1a7a336a0971f87ac63f3e25f4ac62692547e8aa66d5",
+      "bytes": 2507,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "analysis/roc/calculate_and_plot.py",
+      "origin": "Fig5_macro_OvR/calculate_and_plot.py",
+      "sha256": "55c2ac500f7fba792b4e64926de26d953d55556bfb740bea73a6ea4567e26b58",
+      "bytes": 23600,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/roc/clean_figure_caption.md",
+      "origin": "Fig5_macro_OvR/clean_figure_caption.md",
+      "sha256": "91d62fed7d269caa2a3a7e2112a3df0f150e3981af70761b77cb257fdb934c53",
+      "bytes": 894,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "analysis/roc/export_smgf_probabilities.py",
+      "origin": "Fig5_macro_OvR/export_smgf_probabilities.py",
+      "sha256": "e6a03f823383c18ab6d39cc923551626d3d41526b6dbf4efdc8ab88ef23ae28c",
+      "bytes": 10792,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/roc/figure_caption.md",
+      "origin": "Fig5_macro_OvR/figure_caption.md",
+      "sha256": "ed3ecc8973422aad6c9d560eceb63aff03e844664a344f4c78ab1e86e04bd57c",
+      "bytes": 1232,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "analysis/roc/macro_roc_curves.npz",
+      "origin": "Fig5_macro_OvR/macro_roc_curves.npz",
+      "sha256": "d8a89cc5e0be688a69c7c081a53253e6e5a6f2d6566e62a672ad8214cca5b34a",
+      "bytes": 1438817,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "analysis/roc/per_class_auroc.csv",
+      "origin": "Fig5_macro_OvR/per_class_auroc.csv",
+      "sha256": "85b32459ffadf3d09fa7a2728734b5519e5c08128dd730717a33e33fab93117f",
+      "bytes": 126947,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "analysis/roc/per_seed_auroc_and_provenance.csv",
+      "origin": "Fig5_macro_OvR/per_seed_auroc_and_provenance.csv",
+      "sha256": "3186c863bb7fa19d248dad1ee0144709bf0c8171b701fb557b51d206a1656339",
+      "bytes": 38626,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "analysis/sensitivity/Figure6_CipherSpectrum_CrossModel_Sensitivity.py",
+      "origin": "新一体化实验chiper/Figure6_CipherSpectrum_CrossModel_Sensitivity.py",
+      "sha256": "df54aab722105165ba5f007e2d1f592c28f87e676a6f73adbbc464750d8d71d8",
+      "bytes": 15031,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/sensitivity/native/Figure6_GPU_Collect_Results.py",
+      "origin": "新一体化实验chiper/BaseLine/Figure6_GPU_Collect_Results.py",
+      "sha256": "b63fbd30e121e97d692dda5cd74963977456600e2724e0da35128ba1ffeea91c",
+      "bytes": 6061,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/sensitivity/native/Figure6_GPU_ETBERT_Sweep.py",
+      "origin": "新一体化实验chiper/BaseLine/Figure6_GPU_ETBERT_Sweep.py",
+      "sha256": "e2ca8b16f341151e5be726e00a24cde46c50771c7ce733508c043b8e785183ec",
+      "bytes": 7843,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/sensitivity/native/Figure6_GPU_IBGC_Frozen_Sweep.py",
+      "origin": "新一体化实验chiper/BaseLine/Figure6_GPU_IBGC_Frozen_Sweep.py",
+      "sha256": "af9c60ddc5e6d298ea90074c27805ad457a11bd803576362e8d8586659f30b27",
+      "bytes": 17925,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "analysis/sensitivity/native/Figure6_GPU_PEAN_NHP_Sweep.py",
+      "origin": "新一体化实验chiper/BaseLine/Figure6_GPU_PEAN_NHP_Sweep.py",
+      "sha256": "893807e8b4a5d42758badc8931d96ce79cae800e25bdd0d727f162fe5fdbee0c",
+      "bytes": 11159,
+      "kind": "analysis-source"
+    },
+    {
+      "path": "data/splits/cipher.json",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/split_manifest.json",
+      "sha256": "01e3b572e8514a238b3733e224161acd1112b79b56f038635be9339b23cfad6b",
+      "bytes": 8070511,
+      "kind": "frozen-split"
+    },
+    {
+      "path": "data/splits/ustc.json",
+      "origin": "新一体化实验chiper/SMGF_V17_USTC_SEED42_FULL_F10000_20260924_082814/split_manifest.json",
+      "sha256": "a34754daa9e202f154484a5b63a8840eb829e56aeaaff4549bac6cb711127f3b",
+      "bytes": 3463819,
+      "kind": "frozen-split"
+    },
+    {
+      "path": "figures/gate_audit/Figure10_GateAudit.pdf",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/figure10/figure10_gate_audit/Figure10_GateAudit.pdf",
+      "sha256": "0fc403aed3f052658c5a9162359fae9964bc6120a35654f2d19f222c185e3f79",
+      "bytes": 25997,
+      "kind": "figure-snapshot"
+    },
+    {
+      "path": "figures/gate_audit/Figure10_GateAudit.svg",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/figure10/figure10_gate_audit/Figure10_GateAudit.svg",
+      "sha256": "b5c6e607bdaa3387a38ac16e47215176dca15b12028b2a42851c255d8b3da02c",
+      "bytes": 89234,
+      "kind": "figure-snapshot"
+    },
+    {
+      "path": "figures/roc/Fig5_macro_OvR_ROC.pdf",
+      "origin": "Fig5_macro_OvR/Fig5_macro_OvR_ROC.pdf",
+      "sha256": "17d75d0cb48732d71d77b1390b606e3631777e4f930e5a59dfe7e517778015ec",
+      "bytes": 1228363,
+      "kind": "figure-snapshot"
+    },
+    {
+      "path": "figures/roc/Fig5_macro_OvR_ROC.svg",
+      "origin": "Fig5_macro_OvR/Fig5_macro_OvR_ROC.svg",
+      "sha256": "2fd08abd8afe797f6c4ed5fafb3b35ba0554c2d1946c3a9638265a3ab86e1244",
+      "bytes": 4413524,
+      "kind": "figure-snapshot"
+    },
+    {
+      "path": "figures/roc/Supplementary_clean_macro_OvR_ROC.pdf",
+      "origin": "Fig5_macro_OvR/Supplementary_clean_macro_OvR_ROC.pdf",
+      "sha256": "8e945b0841d5ee6b02152ee6772ee8f7ebe2ccecbe3ecd861c3ab41083abcc17",
+      "bytes": 494302,
+      "kind": "figure-snapshot"
+    },
+    {
+      "path": "results/raw/ablation/PAPER_READY_CIPHER_MATCHED_ABLATION.csv",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/PAPER_READY_CIPHER_MATCHED_ABLATION.csv",
+      "sha256": "48f1b46bf3c7385d8a2d9704a62d16a3aa6a7dcb512bf4194a34b9b745d69ee5",
+      "bytes": 1344,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/ablation/PAPER_READY_CIPHER_MATCHED_ABLATION.md",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/PAPER_READY_CIPHER_MATCHED_ABLATION.md",
+      "sha256": "1551dfabfb9bca883551b25d804b2b0fc8434e95f1dd7075619fc90945a91717",
+      "bytes": 2823,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/ablation/factorial_effects.json",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/factorial_effects.json",
+      "sha256": "72e8952c08af5983577c36e8c0bfd3f94bc8b8c695b40e08b389a09c4eee63e5",
+      "bytes": 1644,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/ablation/per_variant_results.json",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/per_variant_results.json",
+      "sha256": "7e29c9e4f3dbc14ca3d207b1ab7903d0972d6afdb67e402cd45f8c83f0a680dc",
+      "bytes": 7179,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/ablation/run_config.json",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/run_config.json",
+      "sha256": "2e02fb668a57fe977b933edeccb15a6789fed085e265d0ac8b993a2579037f78",
+      "bytes": 2272,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/ablation/run_manifest.json",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/run_manifest.json",
+      "sha256": "50599d02861d52aa56a424ac56c17c7c6938b42a69e147168508c080003f6795",
+      "bytes": 2541,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/etbert/ETBERT_aggregate_primary.csv",
+      "origin": "新一体化实验chiper/ETBERT_FINAL_PAPER_BASELINE_V1/ETBERT_aggregate_primary.csv",
+      "sha256": "756d6c3e296049c10f4bbe8d512e3f33138b268f33e03c4973d58e9edf8f150e",
+      "bytes": 2133,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/etbert/ETBERT_per_seed_primary.csv",
+      "origin": "新一体化实验chiper/ETBERT_FINAL_PAPER_BASELINE_V1/ETBERT_per_seed_primary.csv",
+      "sha256": "221eedda3b5285df1ff4407c4b762baa20c4e53a132ce12d660488e7a0b7ba58",
+      "bytes": 2084,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/etbert/PAPER_READY_ETBERT_BASELINE.md",
+      "origin": "新一体化实验chiper/ETBERT_FINAL_PAPER_BASELINE_V1/PAPER_READY_ETBERT_BASELINE.md",
+      "sha256": "43dc7d34ef15f9639b957303c9b5737a287da1daff61ab3d377019e762e622fd",
+      "bytes": 1595,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/etbert/run_manifest.json",
+      "origin": "新一体化实验chiper/ETBERT_FINAL_PAPER_BASELINE_V1/run_manifest.json",
+      "sha256": "3e90624e4f9337cdccb1b73994b580356199569f6de6708974559d16453ac95e",
+      "bytes": 3926,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/etbert/summary.json",
+      "origin": "新一体化实验chiper/ETBERT_FINAL_PAPER_BASELINE_V1/summary.json",
+      "sha256": "d1350a54ee0aba7e13e3a2363830e05480c514ac785354e91d5fa2f53e801d46",
+      "bytes": 4744,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/gate_audit/Figure10_GateAudit.json",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/figure10/figure10_gate_audit/Figure10_GateAudit.json",
+      "sha256": "81b5360e9f88fac3fccca8b32457c3cba4a5044bdd3953eb4bee3d806aab43d5",
+      "bytes": 170065,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/gate_audit/Figure10_GateAudit_seed42_channel_matrix.csv",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/figure10/figure10_gate_audit/Figure10_GateAudit_seed42_channel_matrix.csv",
+      "sha256": "eb40324a2a4f9ef28a0f8e21b6488b6c1c514723ba182d34eb46d2ef92ee1a59",
+      "bytes": 20182,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/gate_audit/Figure10_GateAudit_seed_summary.csv",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/figure10/figure10_gate_audit/Figure10_GateAudit_seed_summary.csv",
+      "sha256": "49cc3c08067d2a70ad97867f0d58145be2decbc7246fa38300ee510733a574b3",
+      "bytes": 1010,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/gate_audit/Figure10_GateAudit_strength_summary.csv",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/figure10/figure10_gate_audit/Figure10_GateAudit_strength_summary.csv",
+      "sha256": "1875b4aefcd18ec16f498851587de5b6f895064e9604a2ff640d4647f579c7bb",
+      "bytes": 1395,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/ibgc/PAPER_READY_IBGC.md",
+      "origin": "新一体化实验chiper/IBGC_V17_V1_100EP/PAPER_READY_IBGC.md",
+      "sha256": "e5facc7efc8c03e95b40969f7afb0bbe0e2740436d1a9a12f7d2ebb19bb3a07c",
+      "bytes": 2401,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/ibgc/aggregate.csv",
+      "origin": "新一体化实验chiper/IBGC_V17_V1_100EP/aggregate.csv",
+      "sha256": "fe4633576d076e9a247a168964e36d4361b00f9aa8073a4ee89cfa3607cf28ab",
+      "bytes": 2780,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/ibgc/per_seed.csv",
+      "origin": "新一体化实验chiper/IBGC_V17_V1_100EP/per_seed.csv",
+      "sha256": "5af2d0291e2fe94865aab7e909870e214be18e7ccef46a9d7cfd0f005165c8aa",
+      "bytes": 5939,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/ibgc/run_manifest.json",
+      "origin": "新一体化实验chiper/IBGC_V17_V1_100EP/run_manifest.json",
+      "sha256": "c4b3a8fc8f9fec978d33c7abe6ce0ad796b50ec911908de680f75db90bcfc29a",
+      "bytes": 1353,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/ibgc/summary.json",
+      "origin": "新一体化实验chiper/IBGC_V17_V1_100EP/summary.json",
+      "sha256": "cc425cef297741b6b6c4235978578ce8c2d88eee19d413edbb655bc9a22d0e2d",
+      "bytes": 8048,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/overhead/TableVIII_V17_status.csv",
+      "origin": "新一体化实验chiper/BaseLine/TableVIII_V17_status.csv",
+      "sha256": "c0e57ff2c3174eb473bd45d74f5fd620e49bdfacc942138f5167c8fd3356d98d",
+      "bytes": 588,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/pean_nhp/PAPER_READY_PEAN_NHP_BASELINE.md",
+      "origin": "新一体化实验chiper/PEAN_NHP_FINAL_PAPER_BASELINE_V1_100EP/PAPER_READY_PEAN_NHP_BASELINE.md",
+      "sha256": "0df2b5ecd15baba1d08762e62a073fedf68950ccecb3f2cfe032583ad7278c33",
+      "bytes": 789,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/pean_nhp/PEAN_NHP_aggregate_primary.csv",
+      "origin": "新一体化实验chiper/PEAN_NHP_FINAL_PAPER_BASELINE_V1_100EP/PEAN_NHP_aggregate_primary.csv",
+      "sha256": "661608c15c18aba81ad9193d1c33b4eb87f74095e79d194905e99db4b13451ef",
+      "bytes": 2676,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/pean_nhp/PEAN_NHP_per_seed_primary.csv",
+      "origin": "新一体化实验chiper/PEAN_NHP_FINAL_PAPER_BASELINE_V1_100EP/PEAN_NHP_per_seed_primary.csv",
+      "sha256": "0758757b473a33cc7d30eb90e7e49cd09e62271a488374c40523af20b01374f5",
+      "bytes": 2446,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/pean_nhp/run_manifest.json",
+      "origin": "新一体化实验chiper/PEAN_NHP_FINAL_PAPER_BASELINE_V1_100EP/run_manifest.json",
+      "sha256": "159512de4d0a1767a80a6960a783ccf345e90fc4f3720ba982a9d64b42ac43ff",
+      "bytes": 3774,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/pean_nhp/summary.json",
+      "origin": "新一体化实验chiper/PEAN_NHP_FINAL_PAPER_BASELINE_V1_100EP/summary.json",
+      "sha256": "b48333525cb0808bbc150d1b0236b458c695c2aa171a551309533c5e7c88c360",
+      "bytes": 10412,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/sensitivity/Figure6_CrossModel_45_verified.csv",
+      "origin": "新一体化实验chiper/FIG6_CIPHER_FROZEN_GPU_SWEEP_Home/Figure6_CrossModel_45_verified.csv",
+      "sha256": "ac0cdd175f940debf35e912033383e45c330dd5fa3e097adff09e98d39b0fbb2",
+      "bytes": 15496,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/sensitivity/Figure6_CrossModel_45_verified.provenance.json",
+      "origin": "新一体化实验chiper/FIG6_CIPHER_FROZEN_GPU_SWEEP_Home/Figure6_CrossModel_45_verified.provenance.json",
+      "sha256": "d77090cc090538c40a66333e3eaad6b6c188ef8ff4945e7c49b0679992491764",
+      "bytes": 1940,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_cipher/paper_ready_aggregate_metrics.csv",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/paper_ready_aggregate_metrics.csv",
+      "sha256": "bcd423888ff9028adc87ee665a7338eb3161d42adeb1742b725a940842a0f4be",
+      "bytes": 4546,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_cipher/paper_ready_primary_per_seed.csv",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/paper_ready_primary_per_seed.csv",
+      "sha256": "48ed0ad24098e2e95fe561a441d9774bf1271699642895f86770ed37d33525f0",
+      "bytes": 963,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_cipher/per_seed_results.json",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/per_seed_results.json",
+      "sha256": "d332d785c8dac97119c064c0be9c0e21a09c113df0272c21ea2ce85c5aa7183f",
+      "bytes": 18084,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_cipher/run_config.json",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/run_config.json",
+      "sha256": "fd239c45f7f64708b7795c06c43819feab876234c07930ac2dd84ab607c55e90",
+      "bytes": 650,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_cipher/summary.json",
+      "origin": "新一体化实验chiper/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/summary.json",
+      "sha256": "5a419f8eae0648cb952e0c075a538e287deb2cb0974ba402c310c5eb44e4d86b",
+      "bytes": 23922,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_ustc/PAPER_READY_USTC_FINAL.csv",
+      "origin": "新一体化实验chiper/SMGF_V17_USTC_FINAL_3SEED_20260924_144614/PAPER_READY_USTC_FINAL.csv",
+      "sha256": "84feb421e3d5751af47546a8442d2526f1946da82dca51ab829ac3a199414206",
+      "bytes": 1208,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_ustc/PAPER_READY_USTC_FINAL.md",
+      "origin": "新一体化实验chiper/SMGF_V17_USTC_FINAL_3SEED_20260924_144614/PAPER_READY_USTC_FINAL.md",
+      "sha256": "f56a672129530a2b5e1eae536a0df7d9d1c6a84dd93422ec9147533f3ead31d5",
+      "bytes": 3813,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_ustc/aggregate_summary.json",
+      "origin": "新一体化实验chiper/SMGF_V17_USTC_FINAL_3SEED_20260924_144614/aggregate_summary.json",
+      "sha256": "81e18e71ccf05743749568180307acab9dbf778337120699e070048095aacecd",
+      "bytes": 5947,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_ustc/paper_ready_aggregate_metrics.csv",
+      "origin": "新一体化实验chiper/SMGF_V17_USTC_FINAL_3SEED_20260924_144614/paper_ready_aggregate_metrics.csv",
+      "sha256": "bdc5b3ce40fa05894c64443e8d641955676b66733de60b87efcd2d1460529d7e",
+      "bytes": 1552,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_ustc/paper_ready_primary_per_seed.csv",
+      "origin": "新一体化实验chiper/SMGF_V17_USTC_FINAL_3SEED_20260924_144614/paper_ready_primary_per_seed.csv",
+      "sha256": "90b70daf9f4b46905bb06b09ad5cee2f1194a74df4841ccbf92bf23b1226a135",
+      "bytes": 1010,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_ustc/run_manifest.json",
+      "origin": "新一体化实验chiper/SMGF_V17_USTC_FINAL_3SEED_20260924_144614/run_manifest.json",
+      "sha256": "3eed63e146f19ed01355aece39e386873102bda8e32dfaecbfe1d938376ce70d",
+      "bytes": 2827,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_ustc/seed42/run_config.json",
+      "origin": "新一体化实验chiper/SMGF_V17_USTC_SEED42_FULL_F10000_20260924_082814/run_config.json",
+      "sha256": "83100fc7b9baa5142de34cad0a68ad2f4a182eda476c3a6a02b963b3a2df9b24",
+      "bytes": 1501,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_ustc/seed42/summary.json",
+      "origin": "新一体化实验chiper/SMGF_V17_USTC_SEED42_FULL_F10000_20260924_082814/summary.json",
+      "sha256": "e37528324cf964dff86bc96ff01cd19c1539b2279647a31f9e32e2cc04c05005",
+      "bytes": 1217,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_ustc/seed43/run_config.json",
+      "origin": "新一体化实验chiper/SMGF_V17_USTC_SEED43_FULL_F10000_20260924_144614/run_config.json",
+      "sha256": "9ace27b397de62d727ad1e41ce72ae0ca677a1d5aca90891e16e58eb4a889593",
+      "bytes": 1501,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_ustc/seed43/summary.json",
+      "origin": "新一体化实验chiper/SMGF_V17_USTC_SEED43_FULL_F10000_20260924_144614/summary.json",
+      "sha256": "b8699eab0819d093bac03dd051a5d940391526cb6c6b7079e89372c2565795b5",
+      "bytes": 1222,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_ustc/seed44/run_config.json",
+      "origin": "新一体化实验chiper/SMGF_V17_USTC_SEED44_FULL_F10000_20260924_152046/run_config.json",
+      "sha256": "5055cf8dd145f08150e116377095ba1341c8558dbe52f8e6742e3f085902cf9d",
+      "bytes": 1501,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/smgfnet_ustc/seed44/summary.json",
+      "origin": "新一体化实验chiper/SMGF_V17_USTC_SEED44_FULL_F10000_20260924_152046/summary.json",
+      "sha256": "70d5d883a8278dd7fcd74270356080f7f1ab1085e0fcc23b0312196659531954",
+      "bytes": 1218,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/ustc_cnn/PAPER_READY_USTC_CNN_BASELINE.md",
+      "origin": "新一体化实验chiper/USTC_CNN_FINAL_PAPER_BASELINE_V1/PAPER_READY_USTC_CNN_BASELINE.md",
+      "sha256": "600a3b83b0d252920e081dd55f5a5adf065c56dfbbaff34ca3e18c461d9d380f",
+      "bytes": 1713,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/ustc_cnn/USTC_CNN_aggregate_primary.csv",
+      "origin": "新一体化实验chiper/USTC_CNN_FINAL_PAPER_BASELINE_V1/USTC_CNN_aggregate_primary.csv",
+      "sha256": "bb070803f1d1b8583a10ba9537d4bd7972c6d186da600dbc4149e7587bf4a721",
+      "bytes": 1918,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/ustc_cnn/USTC_CNN_per_seed_primary.csv",
+      "origin": "新一体化实验chiper/USTC_CNN_FINAL_PAPER_BASELINE_V1/USTC_CNN_per_seed_primary.csv",
+      "sha256": "177830ea17e1465c222f3df95eee09cc6cd3c17e6c49e0cfd0d3700cf151ba73",
+      "bytes": 2090,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/ustc_cnn/run_manifest.json",
+      "origin": "新一体化实验chiper/USTC_CNN_FINAL_PAPER_BASELINE_V1/run_manifest.json",
+      "sha256": "f18b396ca4deb8e6897d14554b9d9409e8ec6f39f2405db243455eb876cbda89",
+      "bytes": 2817,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "results/raw/ustc_cnn/summary.json",
+      "origin": "新一体化实验chiper/USTC_CNN_FINAL_PAPER_BASELINE_V1/summary.json",
+      "sha256": "24fa9b2db0c475c6f7456cab8b9c088a7557d54d944ad63491085d3745357355",
+      "bytes": 8360,
+      "kind": "result-snapshot"
+    },
+    {
+      "path": "src/baselines/common/baseline_v17_common.py",
+      "origin": "新一体化实验chiper/BaseLine/baseline_v17_common.py",
+      "sha256": "5cac4313cc4991b3de5fd4e1025b940c01249148b67fb2c3d9cb8218650a99cf",
+      "bytes": 25650,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/etbert/ET-BERT_final_paper_experiments.py",
+      "origin": "新一体化实验chiper/BaseLine/ET-BERT_final_paper_experiments.py",
+      "sha256": "701312c8e8804a9a21e832558f9950ed82efe900bdf51537e657c356fff4d559",
+      "bytes": 62245,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/ibgc/IBGC_final_paper_experiments_V1_100ep.py",
+      "origin": "新一体化实验chiper/BaseLine/IBGC_V17_V1_100EP_bundle/IBGC_V17_V1_100EP/IBGC_final_paper_experiments_V1_100ep.py",
+      "sha256": "8afa1e8afb38cea3dc40bdc49d4b13f4ccebb77f8fb8c5f484b112ee359571e7",
+      "bytes": 8819,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/ibgc/PROVENANCE.md",
+      "origin": "新一体化实验chiper/BaseLine/IBGC_V17_V1_100EP_bundle/IBGC_V17_V1_100EP/PROVENANCE.md",
+      "sha256": "6d509e8f580edfae1ecb84508d23fe63346141756ed4e2abc06256b424f3a0a9",
+      "bytes": 7824,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/ibgc/baseline_v17_common.py",
+      "origin": "新一体化实验chiper/BaseLine/IBGC_V17_V1_100EP_bundle/IBGC_V17_V1_100EP/baseline_v17_common.py",
+      "sha256": "5cac4313cc4991b3de5fd4e1025b940c01249148b67fb2c3d9cb8218650a99cf",
+      "bytes": 25650,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/ibgc/fetch_official.py",
+      "origin": "新一体化实验chiper/BaseLine/IBGC_V17_V1_100EP_bundle/IBGC_V17_V1_100EP/fetch_official.py",
+      "sha256": "baeae2075e97f511fa546b893d978a066c87efdb8041aed6844d527d960a5536",
+      "bytes": 1241,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/ibgc/ibgc_data.py",
+      "origin": "新一体化实验chiper/BaseLine/IBGC_V17_V1_100EP_bundle/IBGC_V17_V1_100EP/ibgc_data.py",
+      "sha256": "282830561a61ef7c0518353aa436abed420d997562e06bca3515a4a1ae9d130f",
+      "bytes": 9037,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/ibgc/ibgc_engine.py",
+      "origin": "新一体化实验chiper/BaseLine/IBGC_V17_V1_100EP_bundle/IBGC_V17_V1_100EP/ibgc_engine.py",
+      "sha256": "a3722a17998d02f8b0004e1a8c00a4ff29420441c310e00bc906fe46dcd7811b",
+      "bytes": 10224,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/ibgc/ibgc_graph.py",
+      "origin": "新一体化实验chiper/BaseLine/IBGC_V17_V1_100EP_bundle/IBGC_V17_V1_100EP/ibgc_graph.py",
+      "sha256": "794ed2f8b4d01812f39f689670ee76b0c7586a924187aaa5c446faea5ce657b7",
+      "bytes": 2987,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/ibgc/ibgc_io.py",
+      "origin": "新一体化实验chiper/BaseLine/IBGC_V17_V1_100EP_bundle/IBGC_V17_V1_100EP/ibgc_io.py",
+      "sha256": "29002be7edbaf19aaaa7c4d56008943bc08f6d9e2007ddceedaea21275749bdf",
+      "bytes": 2167,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/ibgc/ibgc_model.py",
+      "origin": "新一体化实验chiper/BaseLine/IBGC_V17_V1_100EP_bundle/IBGC_V17_V1_100EP/ibgc_model.py",
+      "sha256": "cdb0da54a6c8ce8729d7745529907a25a46893e900b2592dd9e67fcda9815275",
+      "bytes": 759,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/ibgc/official_source_manifest.json",
+      "origin": "新一体化实验chiper/BaseLine/IBGC_V17_V1_100EP_bundle/IBGC_V17_V1_100EP/official_source_manifest.json",
+      "sha256": "5f56fb8911ea4a6f1480a2050c1e87493f90ff996e9f3f53fed4c987a7ceb977",
+      "bytes": 793,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/ibgc/requirements.txt",
+      "origin": "新一体化实验chiper/BaseLine/IBGC_V17_V1_100EP_bundle/IBGC_V17_V1_100EP/requirements.txt",
+      "sha256": "f4a6767f7d265dba7013b3aa128f7de49f47cd4b05584a7026f5ae67681dbbb6",
+      "bytes": 339,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/ibgc/test_ibgc.py",
+      "origin": "新一体化实验chiper/BaseLine/IBGC_V17_V1_100EP_bundle/IBGC_V17_V1_100EP/test_ibgc.py",
+      "sha256": "0e1937470a101e204209eb36a36433548b8d2e211d234f9f653cb74b9d909b35",
+      "bytes": 13859,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/pean_nhp/PEAN_NHP_V17_model.py",
+      "origin": "新一体化实验chiper/BaseLine/PEAN_NHP_V17_model.py",
+      "sha256": "110b1330ee766805a8545429484beec6e00a167817b440cf600f378b56b11b82",
+      "bytes": 3638,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/pean_nhp/PEAN_NHP_final_data_V1_100ep.py",
+      "origin": "新一体化实验chiper/BaseLine/PEAN_NHP_final_data_V1_100ep.py",
+      "sha256": "ee6e9c5f29671238254729d1771e4fd886b6365ddd4dc20f4dd735cb97b23536",
+      "bytes": 17994,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/pean_nhp/PEAN_NHP_final_paper_experiments_V1_100ep.py",
+      "origin": "新一体化实验chiper/BaseLine/PEAN_NHP_final_paper_experiments_V1_100ep.py",
+      "sha256": "4b5078043120d690df43d0fbdd53c1cfb76e98c5180de1ff7163aed4a396320f",
+      "bytes": 33114,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/pean_nhp/baseline_v17_common.py",
+      "origin": "新一体化实验chiper/BaseLine/baseline_v17_common.py",
+      "sha256": "5cac4313cc4991b3de5fd4e1025b940c01249148b67fb2c3d9cb8218650a99cf",
+      "bytes": 25650,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/baselines/pean_nhp/official_sources/PEAN/Config/vocab.txt",
+      "origin": "新一体化实验chiper/BaseLine/official_sources/PEAN/Config/vocab.txt",
+      "sha256": "e829aff44464de461ce92775b092c47b1be8484da9db4cf20acdb3a1b1303384",
+      "bytes": 799,
+      "kind": "third-party-source"
+    },
+    {
+      "path": "src/baselines/pean_nhp/official_sources/PEAN/PEAN_model.py",
+      "origin": "新一体化实验chiper/BaseLine/official_sources/PEAN/PEAN_model.py",
+      "sha256": "f752c445bf8b69064f7a740f2a9e80b0740c1672e3e9d0aa3bb8e75a94716886",
+      "bytes": 6106,
+      "kind": "third-party-source"
+    },
+    {
+      "path": "src/baselines/pean_nhp/official_sources/PEAN/README.md",
+      "origin": "新一体化实验chiper/BaseLine/official_sources/PEAN/README.md",
+      "sha256": "bc33b5b25da98b9d3e98405d147d1fec1473cb3626969c483b2f14ca9650ede7",
+      "bytes": 20544,
+      "kind": "third-party-source"
+    },
+    {
+      "path": "src/baselines/pean_nhp/official_sources/PEAN/TRF.py",
+      "origin": "新一体化实验chiper/BaseLine/official_sources/PEAN/TRF.py",
+      "sha256": "927c864c0bfcf7033b04c0689f5d8df6c7a08693593b3a12ec5e17d9fa286e98",
+      "bytes": 5273,
+      "kind": "third-party-source"
+    },
+    {
+      "path": "src/baselines/pean_nhp/official_sources/PEAN/config.py",
+      "origin": "新一体化实验chiper/BaseLine/official_sources/PEAN/config.py",
+      "sha256": "fa78d87e4b10f7fe7eeaa97a10d614ec078a5d91feacdbf5daa7aac84b274a7e",
+      "bytes": 1450,
+      "kind": "third-party-source"
+    },
+    {
+      "path": "src/baselines/pean_nhp/official_sources/PEAN/main.py",
+      "origin": "新一体化实验chiper/BaseLine/official_sources/PEAN/main.py",
+      "sha256": "dfd75fdbc7f731e27831eece59165d7cfee643264f59548b76dd47f4d4d92125",
+      "bytes": 8285,
+      "kind": "third-party-source"
+    },
+    {
+      "path": "src/baselines/pean_nhp/official_sources/PEAN/train_eval.py",
+      "origin": "新一体化实验chiper/BaseLine/official_sources/PEAN/train_eval.py",
+      "sha256": "c6097976ebac05bdc3f8b20b02437d6e11852f239a6374c48a1929adfa80782e",
+      "bytes": 7621,
+      "kind": "third-party-source"
+    },
+    {
+      "path": "src/baselines/pean_nhp/official_sources/PEAN/utils.py",
+      "origin": "新一体化实验chiper/BaseLine/official_sources/PEAN/utils.py",
+      "sha256": "a7e92b27ace2bfe83c66510221a12d1d10876c52684381cc83435f96b29418e8",
+      "bytes": 6794,
+      "kind": "third-party-source"
+    },
+    {
+      "path": "src/baselines/ustc_cnn/USTC_CNN_final_paper_experiments.py",
+      "origin": "新一体化实验chiper/BaseLine/USTC_CNN_final_paper_experiments.py",
+      "sha256": "964078e3070b04e4e96c3838bf24a6f79cdaf122a0063e29e05bc3e50b65f8f0",
+      "bytes": 53650,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/smgfnet/frozen/V16-SMGF-Net_final_paper_experiments.py",
+      "origin": "新一体化实验chiper/V16-SMGF-Net_final_paper_experiments.py",
+      "sha256": "3ecaf0054a1a190b444fe6f3c19cf6203273ad32707041ec53b09318ca20a4e2",
+      "bytes": 95933,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/smgfnet/frozen/V17-SMGF-Net_final_paper_experiments.py",
+      "origin": "新一体化实验chiper/V17-SMGF-Net_final_paper_experiments.py",
+      "sha256": "17c88de543207e0241c666a4aa7aae4d36c023dda37ac131d7531957ede2cfa9",
+      "bytes": 53937,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/smgfnet/frozen/V17_CipherSpectrum_Figure10_Gate_Audit.py",
+      "origin": "新一体化实验chiper/V17_CipherSpectrum_Figure10_Gate_Audit.py",
+      "sha256": "84e539a4bbbdd6a2fe409d1e40ad379486806badd35675a550d17ae98dcd3d36",
+      "bytes": 35328,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/smgfnet/frozen/V17_CipherSpectrum_MATCHED_ABLATION_SEED42.py",
+      "origin": "新一体化实验chiper/V17_CipherSpectrum_MATCHED_ABLATION_SEED42.py",
+      "sha256": "348bf399172ca1e630097dc412fe2322239eb6b874006dc9c9e7f3449387a08f",
+      "bytes": 57118,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/smgfnet/frozen/V17_CipherSpectrum_final_frozen_3seed.py",
+      "origin": "新一体化实验chiper/V17_CipherSpectrum_final_frozen_3seed.py",
+      "sha256": "048f9dceb4811650dc5b2202e29ab6b83fd3ebea75c412c9712d11954ed6120a",
+      "bytes": 25222,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/smgfnet/frozen/V17_USTC_final_seed43_44.py",
+      "origin": "新一体化实验chiper/V17_USTC_final_seed43_44.py",
+      "sha256": "4bfed88a8a96142a695ca58fc3f6cb7539a93909777753ef6292191fed6a7c92",
+      "bytes": 24279,
+      "kind": "frozen-source"
+    },
+    {
+      "path": "src/smgfnet/frozen/V17_USTC_frozen_runner.py",
+      "origin": "新一体化实验chiper/V17_USTC_frozen_runner.py",
+      "sha256": "5f048e69f18271b7be5634f136d73d6776bce579a2741fb681b529ae3bf3e22b",
+      "bytes": 46437,
+      "kind": "frozen-source"
+    }
+  ]
+}

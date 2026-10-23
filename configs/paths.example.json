@@ -1,0 +1,8 @@
+{
+  "cipher_root": "/path/to/CipherSpectrum",
+  "ustc_root": "/path/to/USTC-TFC2016-Split",
+  "result_root": "outputs/RESULT",
+  "cache_root": "outputs/cache",
+  "etbert_root": "/path/to/ET-BERT",
+  "smgf_seed42_checkpoint": "/path/to/RATIO_020/checkpoints/best.pt"
+}

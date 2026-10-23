@@ -1,0 +1,81 @@
+{
+  "dataset": "USTC-TFC2016",
+  "experimental_subset": {
+    "classes": 12,
+    "flows": 21256,
+    "class_counts": {
+      "Cridex": 2000,
+      "Geodo": 2000,
+      "Gmail": 1409,
+      "Htbot": 2000,
+      "Miuref": 2000,
+      "Neris": 2000,
+      "Nsis": 2000,
+      "Shifu": 1518,
+      "Tinba": 329,
+      "Virut": 2000,
+      "WorldOfWarcraft": 2000,
+      "Zeus": 2000
+    }
+  },
+  "dataset_manifest_sha256": "612c69a851dad04658619fd6c79ef60f34d08dd7dd1a0e14262fa01428cb2190",
+  "split_manifest_sha256": "a34754daa9e202f154484a5b63a8840eb829e56aeaaff4549bac6cb711127f3b",
+  "split_seed": 42,
+  "split_counts": {
+    "train": 15304,
+    "validation": 1700,
+    "test": 4252
+  },
+  "shared_cache": "/home/admin1/lkfiles/USTC_CACHE/ustc_raw_graphs_f10000.pt",
+  "source_sha256": {
+    "orchestrator": "4bfed88a8a96142a695ca58fc3f6cb7539a93909777753ef6292191fed6a7c92",
+    "runner": "5f048e69f18271b7be5634f136d73d6776bce579a2741fb681b529ae3bf3e22b",
+    "v17": "17c88de543207e0241c666a4aa7aae4d36c023dda37ac131d7531957ede2cfa9",
+    "v16": "3ecaf0054a1a190b444fe6f3c19cf6203273ad32707041ec53b09318ca20a4e2"
+  },
+  "protocol": {
+    "epochs": 100,
+    "early_stopping": false,
+    "lr_schedule": [
+      [
+        1,
+        70,
+        0.002
+      ],
+      [
+        71,
+        100,
+        0.0005
+      ]
+    ],
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "robust_batch_ratio": 0.2,
+    "train_attack": "mixed",
+    "robust_strength_distribution": "Uniform[0.3,0.9]",
+    "attack_ce_weight": 1.0,
+    "kl_weight": 0.0,
+    "gate_mode": "learned",
+    "checkpoint_rule": "minimum clean-validation CE"
+  },
+  "seeds": {
+    "42": {
+      "result_dir": "/home/admin1/lkfiles/RESULT/SMGF_V17_USTC_SEED42_FULL_F10000_20260924_082814",
+      "split_sha256": "a34754daa9e202f154484a5b63a8840eb829e56aeaaff4549bac6cb711127f3b",
+      "checkpoint_sha256": "612b399333730866d6527570a56c21b75f2b1fa04abf52b392133082119b0e1c",
+      "history_sha256": "d1db8614850db7a46df8d90404ead9ca23a996a513ee83bdd0c082c72a4495e9"
+    },
+    "43": {
+      "result_dir": "/home/admin1/lkfiles/RESULT/SMGF_V17_USTC_SEED43_FULL_F10000_20260924_144614",
+      "split_sha256": "a34754daa9e202f154484a5b63a8840eb829e56aeaaff4549bac6cb711127f3b",
+      "checkpoint_sha256": "e896370dcd009f3153c6b21552c95121578428ba5d739545170473373f38c99c",
+      "history_sha256": "795dd4a660ad900f82adeb79495e2301c92b644e8f599ffc2fb7eee87d11a7a2"
+    },
+    "44": {
+      "result_dir": "/home/admin1/lkfiles/RESULT/SMGF_V17_USTC_SEED44_FULL_F10000_20260924_152046",
+      "split_sha256": "a34754daa9e202f154484a5b63a8840eb829e56aeaaff4549bac6cb711127f3b",
+      "checkpoint_sha256": "8235ec71b746635f46cb24c9260a8a8a58f24f0c3648529ba79222ac68f62e11",
+      "history_sha256": "f34271e10dfeca9f1c45e108380b1391980bf01cfd5d9394c55c5bf4a26afd52"
+    }
+  }
+}

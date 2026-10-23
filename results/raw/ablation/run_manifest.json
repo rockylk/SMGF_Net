@@ -1,0 +1,40 @@
+{
+  "experiment": "CipherSpectrum matched 2x2 ablation",
+  "paper_role": "fixed-seed component diagnostic",
+  "train_seed": 42,
+  "split_seed": 42,
+  "dataset_manifest_sha256": "821bee04771f0c8dce3680a4301164d8ab48e03ec0d1ed57c3930015ad200a61",
+  "split_manifest_sha256": "01e3b572e8514a238b3733e224161acd1112b79b56f038635be9339b23cfad6b",
+  "source_sha256": {
+    "this_script": "348bf399172ca1e630097dc412fe2322239eb6b874006dc9c9e7f3449387a08f",
+    "V17_base": "17c88de543207e0241c666a4aa7aae4d36c023dda37ac131d7531957ede2cfa9",
+    "V16_core": "3ecaf0054a1a190b444fe6f3c19cf6203273ad32707041ec53b09318ca20a4e2"
+  },
+  "matched_initial_state_sha256": "8bdaa29a7aaca7276c4384a7a834491e6b9b723eeb494320485cf868b404a452",
+  "formal_full_checkpoint_sha256": "a0002cb6cb692b9965b29ec187b7aefd902a475361c1cdc0450077397c4ee7d9",
+  "artifacts": {
+    "config": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/run_config.json",
+    "per_variant_results": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/per_variant_results.json",
+    "paper_csv": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/PAPER_READY_CIPHER_MATCHED_ABLATION.csv",
+    "paper_md": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/PAPER_READY_CIPHER_MATCHED_ABLATION.md",
+    "factorial_effects": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/factorial_effects.json"
+  },
+  "checkpoints": {
+    "FULL": {
+      "path": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/checkpoints/FULL_seed42_REUSED.pt",
+      "sha256": "a0002cb6cb692b9965b29ec187b7aefd902a475361c1cdc0450077397c4ee7d9"
+    },
+    "STRICT_NO_GATE": {
+      "path": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/checkpoints/STRICT_NO_GATE_seed42.pt",
+      "sha256": "741b192d369e1e15c3c1778f363faf064fd89515dce0238a84d8db763e62400c"
+    },
+    "CLEAN_ONLY": {
+      "path": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/checkpoints/CLEAN_ONLY_seed42.pt",
+      "sha256": "64175f83a4ada99f28ff61e9836c05d752bbae9ac95d09cf080b54d5ff9fa4ed"
+    },
+    "NO_GATE_CLEAN_ONLY": {
+      "path": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/checkpoints/NO_GATE_CLEAN_ONLY_seed42.pt",
+      "sha256": "eca294d23f84ab62109c3ceeea3f0415d57573770db72e7cf05ed7e60d372ff9"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "Mixed": {
+    "gate_with_training_pp": 2.439024390243901,
+    "gate_without_training_pp": 4.048780487804876,
+    "training_with_gate_pp": 38.1829268292683,
+    "training_without_gate_pp": 39.79268292682927,
+    "interaction_pp": -1.6097560975609753
+  },
+  "Adaptive": {
+    "gate_with_training_pp": 3.6951219512195195,
+    "gate_without_training_pp": 9.292682926829258,
+    "training_with_gate_pp": 3.6951219512195195,
+    "training_without_gate_pp": 9.292682926829258,
+    "interaction_pp": -5.597560975609738
+  }
+}

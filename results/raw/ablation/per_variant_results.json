@@ -1,0 +1,171 @@
+{
+  "dataset": "CipherSpectrum",
+  "train_seed": 42,
+  "split_seed": 42,
+  "dataset_manifest_sha256": "821bee04771f0c8dce3680a4301164d8ab48e03ec0d1ed57c3930015ad200a61",
+  "split_manifest_sha256": "01e3b572e8514a238b3733e224161acd1112b79b56f038635be9339b23cfad6b",
+  "formal_full_source": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/checkpoints/FINAL_seed42_REUSED.pt",
+  "training": {
+    "FULL": {
+      "tag": "FULL",
+      "reused": true,
+      "checkpoint": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/checkpoints/FULL_seed42_REUSED.pt",
+      "checkpoint_sha256": "a0002cb6cb692b9965b29ec187b7aefd902a475361c1cdc0450077397c4ee7d9",
+      "best_epoch": -1,
+      "best_val_loss": NaN,
+      "initial_state_sha256": "8bdaa29a7aaca7276c4384a7a834491e6b9b723eeb494320485cf868b404a452",
+      "gate_mode": "learned",
+      "use_robust_batches": true
+    },
+    "STRICT_NO_GATE": {
+      "tag": "STRICT_NO_GATE",
+      "checkpoint": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/checkpoints/STRICT_NO_GATE_seed42.pt",
+      "checkpoint_sha256": "741b192d369e1e15c3c1778f363faf064fd89515dce0238a84d8db763e62400c",
+      "history": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/history/STRICT_NO_GATE_seed42.csv",
+      "history_sha256": "78f77d5e9cf97beefbb08409993798e251bb446f251de7ad3f54c12fb916f77f",
+      "best_epoch": 100,
+      "best_val_loss": 0.2015092314052198,
+      "initial_state_sha256": "8bdaa29a7aaca7276c4384a7a834491e6b9b723eeb494320485cf868b404a452",
+      "gate_mode": "identity",
+      "use_robust_batches": true
+    },
+    "CLEAN_ONLY": {
+      "tag": "CLEAN_ONLY",
+      "checkpoint": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/checkpoints/CLEAN_ONLY_seed42.pt",
+      "checkpoint_sha256": "64175f83a4ada99f28ff61e9836c05d752bbae9ac95d09cf080b54d5ff9fa4ed",
+      "history": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/history/CLEAN_ONLY_seed42.csv",
+      "history_sha256": "7b9b69ff0c9fb1ac59ec895857f96c142a303dcbf38981b1f8d1c7c8562efb19",
+      "best_epoch": 95,
+      "best_val_loss": 0.22162577815460194,
+      "initial_state_sha256": "8bdaa29a7aaca7276c4384a7a834491e6b9b723eeb494320485cf868b404a452",
+      "gate_mode": "learned",
+      "use_robust_batches": false
+    },
+    "NO_GATE_CLEAN_ONLY": {
+      "tag": "NO_GATE_CLEAN_ONLY",
+      "checkpoint": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/checkpoints/NO_GATE_CLEAN_ONLY_seed42.pt",
+      "checkpoint_sha256": "eca294d23f84ab62109c3ceeea3f0415d57573770db72e7cf05ed7e60d372ff9",
+      "history": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/history/NO_GATE_CLEAN_ONLY_seed42.csv",
+      "history_sha256": "6be87f546c3fae54e540b0eac424958a5ce89a494b80a2d54cb21de7ccd98efc",
+      "best_epoch": 73,
+      "best_val_loss": 0.2287570185292258,
+      "initial_state_sha256": "8bdaa29a7aaca7276c4384a7a834491e6b9b723eeb494320485cf868b404a452",
+      "gate_mode": "identity",
+      "use_robust_batches": false
+    }
+  },
+  "results": {
+    "FULL": {
+      "tag": "FULL",
+      "train_seed": 42,
+      "gate_mode": "learned",
+      "best_epoch": -1,
+      "best_val_loss": NaN,
+      "checkpoint": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/checkpoints/FULL_seed42_REUSED.pt",
+      "checkpoint_sha256": "a0002cb6cb692b9965b29ec187b7aefd902a475361c1cdc0450077397c4ee7d9",
+      "clean": {
+        "acc": 91.01219512195122,
+        "macro_f1": 90.8058161407013,
+        "ece": 1.1148182996889444
+      },
+      "mixed@1.0": {
+        "robust_acc": 79.45121951219512,
+        "robust_f1": 79.33260723314804,
+        "asr": 14.819777569342088,
+        "rel_drop": 12.702666488007505,
+        "ece": 7.536278725124713
+      },
+      "adaptive@1.0": {
+        "robust_acc": 87.39024390243902,
+        "robust_f1": 87.3292446778646,
+        "asr": 6.016347313412837,
+        "rel_drop": 3.9796328554200753,
+        "ece": 2.969984473069994
+      }
+    },
+    "STRICT_NO_GATE": {
+      "tag": "STRICT_NO_GATE",
+      "train_seed": 42,
+      "gate_mode": "identity",
+      "best_epoch": 100,
+      "best_val_loss": 0.2015092314052198,
+      "checkpoint": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/checkpoints/STRICT_NO_GATE_seed42.pt",
+      "checkpoint_sha256": "741b192d369e1e15c3c1778f363faf064fd89515dce0238a84d8db763e62400c",
+      "clean": {
+        "acc": 91.03658536585367,
+        "macro_f1": 90.7559539748903,
+        "ece": 2.0425618770645837
+      },
+      "mixed@1.0": {
+        "robust_acc": 77.01219512195122,
+        "robust_f1": 76.63860102326868,
+        "asr": 17.14668452779638,
+        "rel_drop": 15.405224380442068,
+        "ece": 11.14971924300601
+      },
+      "adaptive@1.0": {
+        "robust_acc": 83.6951219512195,
+        "robust_f1": 83.56794906698187,
+        "asr": 9.819156061620896,
+        "rel_drop": 8.064300066979254,
+        "ece": 6.5438525947492305
+      }
+    },
+    "CLEAN_ONLY": {
+      "tag": "CLEAN_ONLY",
+      "train_seed": 42,
+      "gate_mode": "learned",
+      "best_epoch": 95,
+      "best_val_loss": 0.22162577815460194,
+      "checkpoint": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/checkpoints/CLEAN_ONLY_seed42.pt",
+      "checkpoint_sha256": "64175f83a4ada99f28ff61e9836c05d752bbae9ac95d09cf080b54d5ff9fa4ed",
+      "clean": {
+        "acc": 92.23170731707317,
+        "macro_f1": 92.03332783237683,
+        "ece": 1.4558203807327803
+      },
+      "mixed@1.0": {
+        "robust_acc": 41.26829268292683,
+        "robust_f1": 40.792056662545974,
+        "asr": 56.89541187359514,
+        "rel_drop": 55.255850852836176,
+        "ece": 48.63224031131078
+      },
+      "adaptive@1.0": {
+        "robust_acc": 83.6951219512195,
+        "robust_f1": 83.44681847960305,
+        "asr": 11.186037286790956,
+        "rel_drop": 9.255586407510258,
+        "ece": 8.589506686460677
+      }
+    },
+    "NO_GATE_CLEAN_ONLY": {
+      "tag": "NO_GATE_CLEAN_ONLY",
+      "train_seed": 42,
+      "gate_mode": "identity",
+      "best_epoch": 73,
+      "best_val_loss": 0.2287570185292258,
+      "checkpoint": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHER_MATCHED_ABLATION_SEED42_20260924_170742/checkpoints/NO_GATE_CLEAN_ONLY_seed42.pt",
+      "checkpoint_sha256": "eca294d23f84ab62109c3ceeea3f0415d57573770db72e7cf05ed7e60d372ff9",
+      "clean": {
+        "acc": 90.52439024390245,
+        "macro_f1": 90.36302974671499,
+        "ece": 1.3413136010853315
+      },
+      "mixed@1.0": {
+        "robust_acc": 37.21951219512195,
+        "robust_f1": 36.355013417477146,
+        "asr": 59.92186447527954,
+        "rel_drop": 58.884548026404424,
+        "ece": 49.31207630819664
+      },
+      "adaptive@1.0": {
+        "robust_acc": 74.40243902439025,
+        "robust_f1": 74.1752534084254,
+        "asr": 19.304863262831738,
+        "rel_drop": 17.809510979388392,
+        "ece": 13.688941791653633
+      }
+    }
+  }
+}

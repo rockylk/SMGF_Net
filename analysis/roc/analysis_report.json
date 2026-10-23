@@ -1,0 +1,15 @@
+{
+  "expected_probability_outputs": 90,
+  "valid_probability_outputs": 90,
+  "unavailable_probability_outputs": 0,
+  "complete_three_seed_groups": 30,
+  "fpr_grid_points": 4001,
+  "class_averaging": "equal-weight OvR",
+  "seed_sd_ddof": 1,
+  "pooled_seeds": false,
+  "averaged_probabilities": false,
+  "auroc_source": "Mean of original per-class threshold ROC integrals for each seed",
+  "display_area_used_for_legend": false,
+  "etbert_official_later_rerun_accepted": true,
+  "excluded_path_substring": "\u4e91\u7aef"
+}

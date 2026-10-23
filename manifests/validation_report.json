@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "validation_scope": "Offline packaging and archived-result checks only",
+  "checks": {
+    "preserved_file_checksums": 129,
+    "python_sources_parsed": 61,
+    "frozen_split_populations": {
+      "cipher": {
+        "classes": 41,
+        "partition_counts": [
+          29520,
+          3280,
+          8200
+        ],
+        "unique_samples": 41000,
+        "status": "PASS"
+      },
+      "ustc": {
+        "classes": 12,
+        "partition_counts": [
+          15304,
+          1700,
+          4252
+        ],
+        "unique_samples": 21256,
+        "status": "PASS"
+      }
+    },
+    "baseline_manifest_source_locks": "PASS",
+    "generated_result_artifacts_verified": 13,
+    "portable_path_adapter": "PASS",
+    "offline_cli_dry_runs": 6,
+    "missing_original_checkpoint_fails_before_ml_import": "PASS",
+    "no_ml_import_or_training": "PASS",
+    "documentation_links": "PASS",
+    "no_raw_traffic_weights_credentials_or_training_logs": "PASS",
+    "hardcoded_credential_pattern_scan": "PASS",
+    "frozen_git_newline_policy": "PASS"
+  },
+  "not_run": [
+    "GPU training",
+    "checkpoint inference",
+    "GPU profiling",
+    "raw PCAP regeneration",
+    "GitHub publication",
+    "upstream downloads"
+  ]
+}

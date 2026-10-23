@@ -1,0 +1,98 @@
+{
+  "baseline": "PEAN-NHP V1 constrained-input PEAN (No Header/Payload)",
+  "upstream": {
+    "url": "https://github.com/Lin-Dada/PEAN",
+    "commit": "b159ec48f8e3a699d863d57a6e2dc331aa83e7cc",
+    "files_sha256": {
+      "README.md": "bc33b5b25da98b9d3e98405d147d1fec1473cb3626969c483b2f14ca9650ede7",
+      "PEAN_model.py": "f752c445bf8b69064f7a740f2a9e80b0740c1672e3e9d0aa3bb8e75a94716886",
+      "TRF.py": "927c864c0bfcf7033b04c0689f5d8df6c7a08693593b3a12ec5e17d9fa286e98",
+      "main.py": "dfd75fdbc7f731e27831eece59165d7cfee643264f59548b76dd47f4d4d92125",
+      "config.py": "fa78d87e4b10f7fe7eeaa97a10d614ec078a5d91feacdbf5daa7aac84b274a7e",
+      "train_eval.py": "c6097976ebac05bdc3f8b20b02437d6e11852f239a6374c48a1929adfa80782e",
+      "utils.py": "a7e92b27ace2bfe83c66510221a12d1d10876c52684381cc83435f96b29418e8",
+      "Config/vocab.txt": "e829aff44464de461ce92775b092c47b1be8484da9db4cf20acdb3a1b1303384"
+    }
+  },
+  "runner_sha256": "4b5078043120d690df43d0fbdd53c1cfb76e98c5180de1ff7163aed4a396320f",
+  "data_source_sha256": "ee6e9c5f29671238254729d1771e4fd886b6365ddd4dc20f4dd735cb97b23536",
+  "model_source_sha256": "110b1330ee766805a8545429484beec6e00a167817b440cf600f378b56b11b82",
+  "common_sha256": "5cac4313cc4991b3de5fd4e1025b940c01249148b67fb2c3d9cb8218650a99cf",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "datasets": [
+    {
+      "name": "CipherSpectrum",
+      "key": "cipher",
+      "num_classes": 41,
+      "root": "/home/admin1/dataset/aes-128-gcm/aes-128-gcm",
+      "split_manifest": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/split_manifest.json",
+      "split_sha256": "01e3b572e8514a238b3733e224161acd1112b79b56f038635be9339b23cfad6b",
+      "dataset_manifest_sha256": "821bee04771f0c8dce3680a4301164d8ab48e03ec0d1ed57c3930015ad200a61",
+      "counts": {
+        "train": 29520,
+        "validation": 3280,
+        "test": 8200
+      }
+    },
+    {
+      "name": "USTC-TFC2016",
+      "key": "ustc",
+      "num_classes": 12,
+      "root": "/home/admin1/dataset/USTC-TFC2016-Split",
+      "split_manifest": "/home/admin1/lkfiles/RESULT/SMGF_V17_USTC_SEED42_FULL_F10000_20260924_082814/split_manifest.json",
+      "split_sha256": "a34754daa9e202f154484a5b63a8840eb829e56aeaaff4549bac6cb711127f3b",
+      "dataset_manifest_sha256": "612c69a851dad04658619fd6c79ef60f34d08dd7dd1a0e14262fa01428cb2190",
+      "counts": {
+        "train": 15304,
+        "validation": 1700,
+        "test": 4252
+      }
+    }
+  ],
+  "training": {
+    "max_epochs": 100,
+    "batch_size": 64,
+    "eval_batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.001,
+    "gamma": 0.992,
+    "validation_every_train_batches": 100,
+    "early_stopping": false,
+    "fixed_epoch_budget": 100,
+    "checkpoint_selection": "minimum independent validation fused CE",
+    "objective": "CE_fused + CE_byte + CE_length",
+    "configuration": "ensemble/trf/random/imploss=True",
+    "input_constraint": "byte branch constant and traffic-independent; packet lengths only"
+  },
+  "evaluation": {
+    "conditions": [
+      "clean",
+      "mixed@1.0",
+      "adaptive@1.0"
+    ],
+    "metrics": [
+      "Accuracy",
+      "Macro-F1",
+      "ECE15",
+      "macro-OvR-AUROC",
+      "ASR",
+      "relative drop",
+      "absolute drop pp"
+    ]
+  },
+  "attack": {
+    "base_seed": 20260919,
+    "physical_family": "padding+IAT jitter+dummy insertion",
+    "note": "PEAN-NHP exposes no model-visible header/payload bytes. Timing jitter does not directly enter the model; byte view is constant and only the packet-length view can change under physical attacks."
+  },
+  "versions": {
+    "python": "3.10.20 (main, Mar 11 2026, 17:46:40) [GCC 14.3.0]",
+    "torch": "2.12.0+cu132",
+    "numpy": "2.2.5"
+  },
+  "created_at": "2026-09-30T18:06:48"
+}

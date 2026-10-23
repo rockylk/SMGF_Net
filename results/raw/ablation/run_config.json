@@ -1,0 +1,81 @@
+{
+  "experiment": "CipherSpectrum matched 2x2 ablation",
+  "dataset": "CipherSpectrum",
+  "dataset_root": "/home/admin1/dataset/aes-128-gcm/aes-128-gcm",
+  "dataset_manifest_sha256": "821bee04771f0c8dce3680a4301164d8ab48e03ec0d1ed57c3930015ad200a61",
+  "split_manifest_sha256": "01e3b572e8514a238b3733e224161acd1112b79b56f038635be9339b23cfad6b",
+  "split_seed": 42,
+  "train_seed": 42,
+  "split_counts": {
+    "train": 29520,
+    "validation": 3280,
+    "test": 8200
+  },
+  "source_sha256": {
+    "V17_base": "17c88de543207e0241c666a4aa7aae4d36c023dda37ac131d7531957ede2cfa9",
+    "V16_core": "3ecaf0054a1a190b444fe6f3c19cf6203273ad32707041ec53b09318ca20a4e2"
+  },
+  "formal_full_seed42": {
+    "source_checkpoint": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/checkpoints/FINAL_seed42_REUSED.pt",
+    "checkpoint_sha256": "a0002cb6cb692b9965b29ec187b7aefd902a475361c1cdc0450077397c4ee7d9",
+    "best_epoch": -1,
+    "best_val_loss": NaN
+  },
+  "matched_initial_state_sha256": "8bdaa29a7aaca7276c4384a7a834491e6b9b723eeb494320485cf868b404a452",
+  "frozen_protocol": {
+    "epochs": 100,
+    "early_stopping": false,
+    "lr_schedule": [
+      [
+        1,
+        70,
+        0.002
+      ],
+      [
+        71,
+        100,
+        0.0005
+      ]
+    ],
+    "optimizer": "AdamW",
+    "weight_decay": 0.0001,
+    "batch_size": 64,
+    "robust_batch_ratio": 0.2,
+    "train_attack": "mixed",
+    "robust_strength_distribution": "Uniform[0.3,0.9]",
+    "attack_ce_weight": 1.0,
+    "kl_weight": 0.0,
+    "checkpoint_rule": "minimum clean-validation CE"
+  },
+  "variants": [
+    {
+      "tag": "FULL",
+      "gate_mode": "learned",
+      "use_robust_batches": true,
+      "reuse_formal_checkpoint": true
+    },
+    {
+      "tag": "STRICT_NO_GATE",
+      "gate_mode": "identity",
+      "use_robust_batches": true,
+      "reuse_formal_checkpoint": false
+    },
+    {
+      "tag": "CLEAN_ONLY",
+      "gate_mode": "learned",
+      "use_robust_batches": false,
+      "reuse_formal_checkpoint": false
+    },
+    {
+      "tag": "NO_GATE_CLEAN_ONLY",
+      "gate_mode": "identity",
+      "use_robust_batches": false,
+      "reuse_formal_checkpoint": false
+    }
+  ],
+  "primary_evaluation": [
+    "Clean",
+    "Mixed@1.0",
+    "Adaptive@1.0"
+  ]
+}

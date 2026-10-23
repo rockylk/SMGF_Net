@@ -1,0 +1,14 @@
+{
+  "primary_per_seed_records": 90,
+  "complete_three_seed_groups": 30,
+  "original_aggregate_values_verified": 244,
+  "probability_accuracy_checks": 90,
+  "roc_summary_groups_verified": 30,
+  "gate_summary_groups_verified": 9,
+  "sensitivity_per_seed_records": 108,
+  "statistical_unit": "independently trained model",
+  "sample_sd_ddof": 1,
+  "pooled_seeds": false,
+  "averaged_probabilities": false,
+  "status": "PASS"
+}

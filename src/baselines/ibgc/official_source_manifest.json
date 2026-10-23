@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/martinal-lee/ibgc",
+  "commit": "72fd198aec6472eb4111e84b3490e721ac69c6df",
+  "files": {
+    "01_feature_extract/delete_broadcast.py": "a13fe8766b78bf8bc1d4ac6dd7fa4b86ceac86eef757e376b303f447f6496e69",
+    "01_feature_extract/mit/BehaviorExtractor.py": "90ca8611129dee6fbef7b2ddf840e604ad08678a766187070035479c8b1299b3",
+    "01_feature_extract/mit/NfstreamPlugin.py": "ef9dd69c7088e56c8af0f2c3accae04fad9d4c19e1e525bf7c731f4c5b964fcf",
+    "02_classification/GraphNet.py": "aa127065b7b6916320b6bb790a2e0c4b2e3c9a2077a8b55b857f144a42aa9c5a",
+    "02_classification/NewGraphDataset.py": "2d656083ff21c390359cd4c12a20430b488b5a0004c4d3578d3d6c96cd67da21",
+    "README.md": "fbd4be72af27877d3c6579838bf604748c6d942599cfcde12442e81b5f8c25b6"
+  }
+}

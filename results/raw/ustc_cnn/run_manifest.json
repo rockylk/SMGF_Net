@@ -1,0 +1,81 @@
+{
+  "baseline": "USTC-CNN [31]",
+  "citation": "Wang W, Zhu M, Zeng X, Ye X, Sheng Y. Malware traffic classification using convolutional neural network for representation learning. ICOIN 2017:712-717.",
+  "architecture_source": "https://github.com/echowei/DeepTraffic/tree/master/1.malware_traffic_classification/4.TrainAndTest",
+  "reproduction_scope": "architecture-faithful, protocol-adapted strict-input reproduction",
+  "script": "/home/admin1/lkfiles/USTC_CNN_final_paper_experiments.py",
+  "script_sha256": "964078e3070b04e4e96c3838bf24a6f79cdaf122a0063e29e05bc3e50b65f8f0",
+  "device": "cuda",
+  "torch_version": "2.12.0+cu132",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "training": {
+    "regime": "clean-only baseline",
+    "optimizer": "SGD",
+    "learning_rate": 0.0001,
+    "batch_size": 50,
+    "source_train_round": 20000,
+    "train_steps": 20001,
+    "training_loss": "summed cross entropy",
+    "checkpoint_rule": "minimum clean-validation mean CE",
+    "validation_every_steps": 200,
+    "robust_training_added": false
+  },
+  "input": {
+    "bytes": 784,
+    "shape": [
+      1,
+      28,
+      28
+    ],
+    "strip_first_bytes_per_packet": 38,
+    "iat_visible_to_model": false
+  },
+  "evaluation": {
+    "split_seed": 42,
+    "attack_base_seed": 20260919,
+    "primary_mixed_strength": 1.0,
+    "primary_adaptive_strength": 1.0,
+    "ece_bins": 15,
+    "asr_definition": "fraction of clean-correct samples misclassified after attack",
+    "rel_drop_definition": "(clean_accuracy - robust_accuracy) / clean_accuracy * 100",
+    "adaptive_is_gradient_white_box": false
+  },
+  "datasets": [
+    {
+      "name": "CipherSpectrum",
+      "root": "/home/admin1/dataset/aes-128-gcm/aes-128-gcm",
+      "classes": 41,
+      "counts": {
+        "train": 29520,
+        "validation": 3280,
+        "test": 8200
+      },
+      "dataset_manifest_sha256": "821bee04771f0c8dce3680a4301164d8ab48e03ec0d1ed57c3930015ad200a61",
+      "split_manifest": "/home/admin1/lkfiles/RESULT/SMGF_V17_CIPHERSPECTRUM_FINAL_3SEED_20260923_135542/split_manifest.json",
+      "split_sha256": "01e3b572e8514a238b3733e224161acd1112b79b56f038635be9339b23cfad6b"
+    },
+    {
+      "name": "USTC-TFC2016",
+      "root": "/home/admin1/dataset/USTC-TFC2016-Split",
+      "classes": 12,
+      "counts": {
+        "train": 15304,
+        "validation": 1700,
+        "test": 4252
+      },
+      "dataset_manifest_sha256": "612c69a851dad04658619fd6c79ef60f34d08dd7dd1a0e14262fa01428cb2190",
+      "split_manifest": "/home/admin1/lkfiles/RESULT/SMGF_V17_USTC_SEED42_FULL_F10000_20260924_082814/split_manifest.json",
+      "split_sha256": "a34754daa9e202f154484a5b63a8840eb829e56aeaaff4549bac6cb711127f3b"
+    }
+  ],
+  "cli": {
+    "mode": "all",
+    "datasets": "both",
+    "force_train": false
+  },
+  "created_at": "2026-09-27 21:24:19"
+}
