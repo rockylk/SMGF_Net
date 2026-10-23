@@ -1,0 +1,5 @@
+# Install the matching PyTorch build and the upstream pinned ET-BERT requirements
+# in a separate environment when reproducing official ET-BERT.
+-r requirements.txt
+scikit-learn
+six

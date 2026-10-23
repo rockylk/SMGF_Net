@@ -1,0 +1,11 @@
+# Training and analysis dependencies; CUDA/PyG wheels must match your hardware.
+# Historical observed versions are recorded in docs/PROTOCOL.md and results/raw/.
+numpy>=2.0
+scipy
+scikit-learn
+matplotlib
+pillow
+scapy
+torch
+torch-geometric
+tqdm
